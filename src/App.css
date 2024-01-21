@@ -1,0 +1,234 @@
+.App {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5px;
+}
+/* 헤더 */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #49974e;
+  color: white;
+}
+.header h3 {
+  font-weight: bolder;
+  margin: 0 auto;
+}
+.header-2 {
+  display: flex;
+  align-items: center;
+}
+.header img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.header span {
+  font-size: 16px; font-weight: bold; vertical-align: middle;
+}
+.header button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.user-details {
+  margin-left: 10px;
+}
+.user-nickname {
+  font-size: 16px;
+  font-weight: bold;
+}
+.user-email {
+  font-size: 14px;
+  color: #ccc;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #555;
+  width: 100%;
+  color:white;
+  border-bottom: 1px solid black;
+}
+.nav>button{
+  width:100%
+}
+.nav>button:hover{
+  cursor: pointer;
+  background-color: lightgray;
+  color: white;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+/* 공용 */
+* {
+  box-sizing: border-box;
+}
+table{
+  border-collapse: collapse;
+}
+thead{
+  background-color: darkgray;
+}
+th{
+  border : 1px solid black;
+}
+td{
+  border : 1px solid black;
+}
+button{
+  background: white;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+/* 게시글 목록*/
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.list-table th, .list-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.list-table th {
+  background-color: #F2F2F2;
+}
+.list-table tbody tr:hover {
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+.list-table button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.list-table button:hover {
+  background-color: #D33122;
+}
+/* 게시글 상세보기 */
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.detail-table th, .detail-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.detail-table th {
+  background-color: #F2F2F2;
+}
+.detail-table td[colSpan="3"] {
+  height: 200px;
+}
+.btn-area {
+  margin-top: 20px;
+}
+.btn-area a {
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-area a:hover {
+  background-color: #45A049;
+}
+/* 등록폼 */
+.enroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.enroll-table th, .enroll-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.enroll-table input, .enroll-table textarea {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.enroll-table button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.enroll-table button:hover {
+  background-color: #45A049;
+}
+/* 모달 */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #FEFEFE;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.login-form {
+  text-align: center;
+}
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.login-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
